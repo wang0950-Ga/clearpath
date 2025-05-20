@@ -24,7 +24,7 @@ function BasicInfo({ formData, handleInputChange }) {
             <option value="selected">✓ Selected</option>
           ) : (
             <>
-              <option value="15-25">18-25</option>
+              <option value="15-25">15-25</option>
               <option value="26-35">26-35</option>
               <option value="36-45">36-45</option>
               <option value="46-55">46-55</option>
