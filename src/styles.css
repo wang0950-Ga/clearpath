@@ -1,5 +1,5 @@
-/* styles.css */
-/* 基本容器样式 */
+/* Preserve original styles */
+/* Basic container styles */
 .app-container {
   padding: 20px;
   max-width: 800px;
@@ -10,7 +10,7 @@
   margin-bottom: 30px;
 }
 
-/* 表单部分通用样式 */
+/* Form section common styles */
 .form-section {
   margin-bottom: 40px;
 }
@@ -22,7 +22,7 @@
   border-bottom: 1px solid #eee;
 }
 
-/* 表单组 */
+/* Form groups */
 .form-group {
   margin-bottom: 20px;
 }
@@ -32,7 +32,7 @@
   padding: 5px;
 }
 
-/* 单选框和复选框样式 */
+/* Radio button and checkbox styles */
 .radio-group, .checkbox-group {
   margin-bottom: 15px;
   padding: 10px;
@@ -44,13 +44,13 @@
   gap: 15px;
 }
 
-/* 问题标题 */
+/* Question titles */
 .question-title {
   margin-bottom: 10px;
   font-weight: bold;
 }
 
-/* 按钮样式 */
+/* Button styles */
 .btn {
   padding: 10px 20px;
   border: none;
@@ -80,7 +80,7 @@
   cursor: pointer;
 }
 
-/* 提交部分 */
+/* Submit section */
 .submit-section {
   margin-top: 30px;
   margin-bottom: 40px;
@@ -101,7 +101,7 @@
   margin-bottom: 15px;
 }
 
-/* 文本区域样式 */
+/* Textarea styles */
 .textarea-control {
   width: 100%;
   min-height: 100px;
@@ -111,4 +111,134 @@
   font-size: 14px;
   font-family: inherit;
   resize: vertical;
+}
+
+/* ===== Responsive Design ===== */
+
+/* Mobile devices (max-width 767px) */
+@media (max-width: 767px) {
+  .app-container {
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .survey-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+  }
+  
+  /* Modify radio and checkbox layout to vertical */
+  .radio-options, .checkbox-options {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Adjust input field width */
+  .form-control {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+  
+  /* Adjust button size and spacing */
+  .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+  
+  .btn-reset {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  /* Increase form group spacing for readability */
+  .form-group {
+    margin-bottom: 25px;
+  }
+  
+  /* Adjust submit section */
+  .submit-section {
+    padding: 15px;
+  }
+}
+
+/* Tablet devices (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .app-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+  
+  /* Some radio and checkbox layouts may still need adjustment */
+  .radio-options, .checkbox-options {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* Adjust input controls */
+  .form-control {
+    width: auto;
+  }
+  
+  /* Adjust layout to be more compact */
+  .form-section {
+    margin-bottom: 30px;
+  }
+}
+
+/* Desktop devices (min-width 1024px) */
+@media (min-width: 1024px) {
+  .app-container {
+    max-width: 800px;
+    padding: 30px;
+  }
+  
+  /* Enhance desktop experience */
+  .form-section:hover {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+}
+
+/* Universal responsive adjustments */
+input, select, textarea {
+  max-width: 100%;
+}
+
+/* Form layout optimization */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Better responsive support for all text inputs */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+.textarea-control {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Ensure form labels are clearly visible */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
 }

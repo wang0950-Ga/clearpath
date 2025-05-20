@@ -639,7 +639,6 @@
     "react-error-overlay": "^6.1.0",
     "react-is": "^17.0.2",
     "react-refresh": "^0.11.0",
-    "react-scripts": "^5.0.1",
     "read-cache": "^1.0.0",
     "readable-stream": "^3.6.2",
     "readdirp": "^3.6.0",
@@ -861,10 +860,15 @@
     "yocto-queue": "^0.1.0"
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "repository": {
     "type": "git",
@@ -876,5 +880,17 @@
   "bugs": {
     "url": "https://github.com/wang0950-Ga/clearpath/issues"
   },
-  "homepage": "https://wang0950-Ga.github.io/clearpath"
+  "homepage": "https://wang0950-Ga.github.io/clearpath",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
