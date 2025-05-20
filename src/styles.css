@@ -1,0 +1,114 @@
+/* styles.css */
+/* 基本容器样式 */
+.app-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.survey-title {
+  margin-bottom: 30px;
+}
+
+/* 表单部分通用样式 */
+.form-section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* 表单组 */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+/* 单选框和复选框样式 */
+.radio-group, .checkbox-group {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #eee;
+}
+
+.radio-options, .checkbox-options {
+  display: flex;
+  gap: 15px;
+}
+
+/* 问题标题 */
+.question-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* 按钮样式 */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-reset {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* 提交部分 */
+.submit-section {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+}
+
+.submit-note {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.submit-help {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* 文本区域样式 */
+.textarea-control {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+}
